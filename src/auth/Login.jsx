@@ -53,6 +53,7 @@ export default function Login({setProgress}){
 }).then(res => {
     dispatch(setLoading(false));
     toast("Login successful");
+  
     const userData = res.data.user; 
     // const token = localStorage.getItem('token'); // Correct variable name
     console.log(userData);

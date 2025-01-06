@@ -18,7 +18,7 @@ export default function Header({ setUser }) {
 
   return (
     <>
-      <header className="fixed top-0 z-10 bg-white w-full">
+      <header className="  bg-white w-full">
         <div className="">
           {/* Creating top banner */}
           <div className="flex justify-between m-2 p-2 text-primary ">
@@ -36,8 +36,7 @@ export default function Header({ setUser }) {
               <Link to="/FAQ" className="hover:text-pink">
                 FAQ
               </Link>
-              <p>Username: {user?.username}</p>
-              <p>Email: {user?.email}</p>
+             
             </div>
            
             
@@ -56,6 +55,8 @@ export default function Header({ setUser }) {
                 <Link to="/userprofile">Profile</Link>
               </>
             </div>
+            <p>Username: {user?.username}</p>
+            <p>Email: {user?.email}</p>
                 <button
                   onClick={handleLogout}
                   className="mt-3 ml-2 hover:text-pink cursor-pointer"
