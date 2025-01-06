@@ -24,7 +24,6 @@ import Jobseekers from "./FAQ/jobseeker";
 import FAQbanner from "./handleError/FAQbanner";
 import SearchData from "./FAQ/SearchData";
 import UserProfilePage from "./components/UserProfilePage";
-
 function App() {
   const [progress, setProgress] = useState(0);
   const [user,setUser] = useState(null)

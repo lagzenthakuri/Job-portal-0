@@ -64,7 +64,7 @@ export default function Register({ setProgress }) {
               alert('success')
               localStorage.setItem('token',token)
               navigate("/login")
-            }
+            } 
             console.log(res);
         });
       } catch(error){

@@ -8,10 +8,10 @@ export const  SearchBar = ({ setResults  }) => {
           fetch("https://mocki.io/v1/627d97a8-b073-4479-b18f-24e7400af486")
           .then((response) => response.json())
           .then((json)=>{
-            const results =  json.jobs.filter((job)=> {
+            `const results =  json.jobs.filter((job)=> {
                 return value && 
                 job.title.toLowerCase().includes(value)
-            });
+            });`
             setResults(results); 
           });
 };

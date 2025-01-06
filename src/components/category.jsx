@@ -66,7 +66,7 @@ export default function Category(){
             products.map( (product,index)=>{
                 let {title,image} = product
                 return <div className="product border relative bg-white  h-36 w-36  m-2 capitalize text-center justify-center hover:ring-2" key={index}> 
-                
+              
                 {/* styling the image and categories */}
                 <span className="absolute justify-center items-center text-4xl text-teal-800 bg-zinc-300 ring rounded-full p-2 mt-16 ml-10 flex"> {image}</span> 
                 <p className="font-bold mr-5 m-2 ">{title}</p>
