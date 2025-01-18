@@ -55,8 +55,8 @@ export default function Header({ setUser }) {
                 <Link to="/userprofile">Profile</Link>
               </>
             </div>
-            <p>Username: {user?.username}</p>
-            <p>Email: {user?.email}</p>
+            <p>Username: {user[0]?.username}</p>
+            <p>Email: {user[0]?.email}</p>
                 <button
                   onClick={handleLogout}
                   className="mt-3 ml-2 hover:text-pink cursor-pointer"
